@@ -20,15 +20,16 @@ public class ExampleInheritance
 
 //    AbstractInheritance ab = Factory.getMyImpl("GetMyClass");
         AbstractInheritance ab = new AbstractInheritanceImpl();
-        ab.implementThis();
+//        ab.implementThis();
         ab.printPublic();
 
-        InterfaceImpl ii = new InterfaceImpl();
+        InterfaceExample ii = new InterfaceImpl();
         ii.implementThis();
         System.out.println(ii.getI());
-
-        ii.implementThis2();
         System.out.println(ii.getJ());
+
+//        ii.implementThis2();
+//        System.out.println(ii.getJ());
 
     }
 }

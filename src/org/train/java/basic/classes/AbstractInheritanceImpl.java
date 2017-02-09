@@ -5,7 +5,6 @@ package org.train.java.basic.classes;
  */
 public class AbstractInheritanceImpl extends AbstractInheritance{
 
-    @Override
     public void implementThis() {
         System.out.println("Implemetened in child1...");
     }

@@ -3,7 +3,7 @@ package org.train.java.basic.classes;
 /**
  * Created by javat on 2/4/2017.
  */
-public abstract class AbstractInheritance {
+public  class AbstractInheritance {
 
     private int i = 10;
 
@@ -27,5 +27,5 @@ public abstract class AbstractInheritance {
         System.out.println("Print parent public...");
     }
 
-    public abstract void implementThis();
+//    public abstract void implementThis();
 }

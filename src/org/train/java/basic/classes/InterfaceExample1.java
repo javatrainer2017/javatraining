@@ -7,5 +7,7 @@ public interface InterfaceExample1 {
 
     public int j = 10;
     public void implementThis2();
-    public int getJ();
+    default int getJ(){
+        return 30;
+    }
 }

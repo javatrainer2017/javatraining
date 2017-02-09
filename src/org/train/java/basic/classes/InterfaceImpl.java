@@ -14,14 +14,18 @@ public class InterfaceImpl implements InterfaceExample,InterfaceExample1 {
         return i;
     }
 
+
     @Override
     public void implementThis2() {
         System.out.println("I am implementing child 1 for 2nd interface");
 
     }
 
-    @Override
-    public int getJ() {
-        return j;
+    public int getJ()
+    {
+//        return  InterfaceExample.super.getJ();
+//        return  InterfaceExample1.super.getJ();
+        return  20;
     }
+
 }
