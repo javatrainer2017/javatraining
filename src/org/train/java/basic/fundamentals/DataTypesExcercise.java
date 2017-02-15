@@ -1,4 +1,4 @@
-package org.train.java.basic;
+package org.train.java.basic.fundamentals;
 
 /**
  *

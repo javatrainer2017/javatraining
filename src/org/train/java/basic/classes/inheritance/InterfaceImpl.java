@@ -1,4 +1,7 @@
-package org.train.java.basic.classes;
+package org.train.java.basic.classes.inheritance;
+
+import org.train.java.basic.classes.inheritance.InterfaceExample;
+import org.train.java.basic.classes.inheritance.InterfaceExample1;
 
 /**
  * Created by javat on 2/4/2017.

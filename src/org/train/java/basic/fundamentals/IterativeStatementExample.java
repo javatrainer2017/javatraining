@@ -1,4 +1,4 @@
-package org.train.java.basic;
+package org.train.java.basic.fundamentals;
 
 /**
  * Created by Ram on 01-02-2017.

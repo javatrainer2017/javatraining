@@ -52,11 +52,19 @@ public class StringExample {
         System.out.println(substrfrompool == stringpool);
         System.out.println(substrnointern == stringpool);
 
+        StringExample se = new StringExample();
+
         // == is equal operator which will ensures equality of value in primitive data type and address reference in object references
         // "Aaa" , "aat"
 
 
 
+    }
+
+
+    public String toString()
+    {
+        return "I am this class";
     }
 
 

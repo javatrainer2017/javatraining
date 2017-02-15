@@ -1,6 +1,6 @@
-package org.train.java.basic;
+package org.train.java.basic.fundamentals;
 
-import org.train.java.basic.classes.*;
+import org.train.java.basic.classes.inheritance.*;
 
 public class ExampleInheritance
 {

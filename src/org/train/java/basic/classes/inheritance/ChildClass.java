@@ -1,8 +1,8 @@
-package org.train.java.basic;
+package org.train.java.basic.classes.inheritance;
 
-import org.train.java.basic.classes.InheritanceExample;
+import org.train.java.basic.classes.inheritance.InheritanceExample;
 
-public class ChildClass extends InheritanceExample
+public class ChildClass extends InheritanceExample implements Runnable
 {
     private int j;
 
@@ -34,4 +34,8 @@ public class ChildClass extends InheritanceExample
         System.out.println("I am in child...");
     }
 
+    @Override
+    public void run() {
+
+    }
 }

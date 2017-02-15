@@ -1,4 +1,4 @@
-package org.train.java.basic.classes;
+package org.train.java.basic.classes.inheritance;
 
 /**
  * Created by javat on 2/4/2017.

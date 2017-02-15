@@ -1,4 +1,4 @@
-package org.train.java.basic.classes;
+package org.train.java.basic.classes.basics;
 
 /**
  * Created by javat on 2/3/2017.
