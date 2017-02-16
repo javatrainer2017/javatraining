@@ -36,11 +36,10 @@ public class ThreadExample {
         private StringBuilder stringBuilder = new StringBuilder();
         private StringBuffer stringBuffer = new StringBuffer();
 
-        public SecondThread(String fileName, Thread t1, StringBuilder sb, StringBuffer sb1) {
+        public SecondThread(String fileName, Thread t1) {
             this.fileName = fileName;
             this.t1 = t1;
-            stringBuffer = sb1;
-            stringBuilder = sb;
+
         }
 
         public void run() {
@@ -71,7 +70,7 @@ public class ThreadExample {
         Thread t5 = new Firstthread("Thread5");
         Thread t6 = new Firstthread("Thread6");*/
 
-        Thread t1 = new Thread(new SecondThread("File 1",ft1,));
+        Thread t1 = new Thread(new SecondThread("File 1",ft1));
 //        Thread t2 = new Thread(new SecondThread("File 2",ft2));
 
         ft1.start();
