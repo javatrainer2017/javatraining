@@ -53,5 +53,9 @@ public class ListIteratorExample {
 
 
         }
+
+        //  ( 4 + 1 + 2 + 3 / 2 * 4) * (10/2)
+        //  Finding Prime number
+        //  Add even number at bening of collection and odd numbers at end of the collection -- print as they added
     }
 }
