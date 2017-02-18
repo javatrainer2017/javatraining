@@ -1,6 +1,7 @@
 package org.train.java.basic.classes.threads.synchronize;
 
 import java.awt.*;
+import java.util.ArrayList;
 import java.util.Collection;
 
 /**
@@ -68,9 +69,6 @@ public class ConsumerPublisher {
             }
 
         }
-
-        Collection
-
     }
 
     public static void main(String[] args) {
