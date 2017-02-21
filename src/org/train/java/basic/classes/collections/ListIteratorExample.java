@@ -20,6 +20,7 @@ public class ListIteratorExample {
         }
 
         ListIterator lt = al.listIterator();
+
         //hasNext()
         //next()
         //nextIndex()
