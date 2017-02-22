@@ -19,6 +19,13 @@ public class TreeSetExample {
 
         System.out.println(treeSet.toString());
 
+        TreeSet treeSeta = new TreeSet();
+        treeSeta.add(new Test(10));
+
+        System.out.println(treeSeta.toString());
+
+
+
         Set treeSet1 = new TreeSet<TestClass>();
         treeSet1.add(new TestClass(10));
         treeSet1.add(new TestClass(8));
@@ -33,7 +40,8 @@ public class TreeSetExample {
                 return 0;
                 else if(o1.getTestValue() > o2.getTestValue())
                     return 1;
-                else return -1;
+                else
+                    return -1;
             }
         });
 
@@ -46,14 +54,17 @@ public class TreeSetExample {
         treeSet2.add(new TestClassComaparator(7));
         treeSet2.add(new TestClassComaparator(13));
 
+        Iterator itr =  treeSet2.descendingIterator();
+        while (itr.hasNext())
+        {
+            System.out.println(itr.next().toString());
+        }
         System.out.println(treeSet2.toString());
         System.out.println(treeSet2.first());
         System.out.println(treeSet2.last());
         System.out.println(treeSet2.tailSet(new TestClassComaparator(6)));
         System.out.println(treeSet2.headSet(new TestClassComaparator(6)));
-
-
-    }
+     }
 
     static class TestClass implements Comparable<TestClass>
     {
@@ -104,6 +115,28 @@ public class TreeSetExample {
             return "" + getTestValue();
         }
 
+    }
+
+    static class Test implements Comparable<Test>
+    {
+        int i;
+
+        public Test(int i)
+        {
+            this.i = i;
+        }
+        public int getI() {
+            return i;
+        }
+
+        public void setI(int i) {
+            this.i = i;
+        }
+
+        @Override
+        public int compareTo(Test o) {
+            return 0;
+        }
     }
 
 }

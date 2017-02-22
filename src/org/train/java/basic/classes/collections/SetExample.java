@@ -14,15 +14,21 @@ public class SetExample {
 
         setEx.add("String1");
         setEx.add(null);
-        setEx.add("String2");
+        setEx.add("String5");
         setEx.add(10);
 
         System.out.println(setEx.toString());
 
-        setEx.add("String2");
+        System.out.println(setEx.add("String3"));
         setEx.add(null);
 
         System.out.println(setEx.toString());
+
+        /// String aimsa aiksiamsinfdi i fiingf iisjsds iiisdj
+        // How many distinct characters are string..
+        //  www.hackerrank.com
+
+
 
         Set setEx2 = new LinkedHashSet<>();
 
