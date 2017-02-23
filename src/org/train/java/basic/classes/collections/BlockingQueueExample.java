@@ -17,6 +17,5 @@ public class BlockingQueueExample {
         bq.offer("Baa");
         System.out.println(bq.offer("Daa"));
         System.out.println(bq.toString());
-
     }
 }
