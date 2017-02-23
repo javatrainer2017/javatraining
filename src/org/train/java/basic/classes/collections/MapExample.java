@@ -8,42 +8,46 @@ import java.util.*;
 public class MapExample {
 
     public static void main(String args[]) {
-        Map map1 = new HashMap<>();
+//        Map map1 = new HashMap<>();
+//
+//        map1.put("String1", "String1");
+//        map1.put(10, "String2");
+//        map1.put(null, "String2");
+////        map1.put(null,"String3");
+//
+//        System.out.println(map1.keySet().toString());
+//        System.out.println(map1.values());
+//        System.out.println(map1.entrySet().iterator());
+//
+//        System.out.println(map1.toString());
 
-        map1.put("String1", "String1");
-        map1.put(10, "String2");
-        map1.put(null, "String2");
-//        map1.put(null,"String3");
+        ///ssiamsiandusansinyl idjunf usjnuuj feujfeu kkasjd
 
-        map1.keySet();
-        map1.values();
+//        Map map2 = new WeakHashMap();
+////        Map map2 = new HashMap();
+//        map2.put(new String("Maine"), "Augusta");
+//
+//        Runnable runner = new Runnable() {
+//            public void run() {
+//                while (map2.containsKey("Maine")) {
+//                    try {
+//                        Thread.sleep(500);
+//                    } catch (InterruptedException ignored) {
+//                    }
+//                    System.out.println("Thread waiting");
+//                    System.gc();
+//                }
+//            }
+//        };
+//        Thread t = new Thread(runner);
+//        t.start();
+//        System.out.println("Main waiting");
+//        try {
+//            t.join();
+//        } catch (InterruptedException ignored) {
+//        }
 
-        System.out.println(map1.toString());
-
-        Map map2 = new WeakHashMap();
-        map2.put(new String("Maine"), "Augusta");
-
-        Runnable runner = new Runnable() {
-            public void run() {
-                while (map2.containsKey("Maine")) {
-                    try {
-                        Thread.sleep(500);
-                    } catch (InterruptedException ignored) {
-                    }
-                    System.out.println("Thread waiting");
-                    System.gc();
-                }
-            }
-        };
-        Thread t = new Thread(runner);
-        t.start();
-        System.out.println("Main waiting");
-        try {
-            t.join();
-        } catch (InterruptedException ignored) {
-        }
-
-        // Create a hash map
+//         Create a hash map
         IdentityHashMap ihm = new IdentityHashMap();
 //        Map ihm = new HashMap<>();
 
@@ -68,6 +72,7 @@ public class MapExample {
 
         // Deposit 1000 into Zara's account
         String str = (String)ihm.get(new String("String1"));
+//        String str = (String)ihm.get(new String("String1"));
         ihm.put("String1", str + "  aaaa");
         System.out.println("String value is " + ihm.get("String1"));
     }

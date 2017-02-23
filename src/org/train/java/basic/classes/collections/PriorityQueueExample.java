@@ -16,6 +16,7 @@ public class PriorityQueueExample {
         pq.add("Baa");
         pq.add("Caa");
         pq.add("Aaa");
+        pq.add("Laa");
 
         System.out.println(pq.toString());
         System.out.println(pq.peek());
