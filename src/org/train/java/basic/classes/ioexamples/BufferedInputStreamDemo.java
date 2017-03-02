@@ -5,12 +5,18 @@ import java.io.*;
 public class BufferedInputStreamDemo {
     public static void main(String args[]) {
         String s = "This is a &copy; copyright symbol " +
-                "but this is &copy; not.\n";
+                "but this is &copy not.\n";
         byte buf[] = s.getBytes();
         ByteArrayInputStream in = new ByteArrayInputStream(buf);
         int c;
         boolean marked = false;
 // Use try-with-resources to manage the file.
+//        try {
+//            BufferedInputStream f1 = new BufferedInputStream(new FileInputStream("D:\\Work\\IOExamples\\newnote.txt"));
+//        } catch (FileNotFoundException e) {
+//            e.printStackTrace();
+//        }
+        System.out.printf(s);
         try (BufferedInputStream f = new BufferedInputStream(in)) {
             while ((c = f.read()) != -1) {
                 switch (c) {
