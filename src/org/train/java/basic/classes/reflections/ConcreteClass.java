@@ -8,7 +8,8 @@ public class ConcreteClass extends BaseClass implements BaseInterface {
 	Object defaultObject;
 
 	public ConcreteClass(){}
-	
+
+	@MyAttribute
 	public ConcreteClass(int i){
 		this.publicInt=i;
 	}
@@ -18,9 +19,13 @@ public class ConcreteClass extends BaseClass implements BaseInterface {
 		System.out.println("Method1 impl.");
 	}
 
+	private void privateMethod() {
+		System.out.println("Method1 impl.");
+	}
+
 	@Override
 	public int method2(String str) {
-		System.out.println("Method2 impl.");
+		System.out.println("Method2 impl." + publicInt);
 		return 0;
 	}
 	
@@ -36,7 +41,9 @@ public class ConcreteClass extends BaseClass implements BaseInterface {
 	}
 	
 	// inner classes
-	public class ConcreteClassPublicClass{}
+	public class ConcreteClassPublicClass{
+
+	}
 	private class ConcreteClassPrivateClass{}
 	protected class ConcreteClassProtectedClass{}
 	class ConcreteClassDefaultClass{}
@@ -46,6 +53,8 @@ public class ConcreteClass extends BaseClass implements BaseInterface {
 	public enum ConcreteClassPublicEnum{}
 	
 	//member interface
-	public interface ConcreteClassPublicInterface{}
+	public interface ConcreteClassPublicInterface{
+		public final int i = 10;
+	}
 
 }
